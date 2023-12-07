@@ -63,7 +63,7 @@ function $search(e) {
         })
         .catch((error) => {
             statusOfSearch.value = false;
-            let $arr = [$name, userName, repos, followers, following, bio];
+            let $arr = [$name, userName, repos, followers, following, bio, company, created, twitter, link];
             $arr.forEach(($dataField) => ($dataField.value = "not Found"));
             avatar.value = octacat;
         });
